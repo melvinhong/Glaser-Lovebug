@@ -113,10 +113,10 @@
             <div class="clear"></div>
         {/if}
 
-        <h2 class="center underline italic s_tMarg">
+        <!-- <h2 class="center underline italic s_tMarg">
             {lang 'Quick User Search'}
         </h2>
-        {{ SearchUserCoreForm::quick() }}
+        {{ SearchUserCoreForm::quick() }} -->
     </div>
 
     <div class="left col-xs-12 col-sm-2 col-md-3">
