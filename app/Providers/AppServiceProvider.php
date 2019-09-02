@@ -3,34 +3,11 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-<<<<<<< HEAD
-=======
 use Illuminate\Support\Facades\Schema;
->>>>>>> parent of 6a2d521... PH7CMS
 
 class AppServiceProvider extends ServiceProvider
 {
     /**
-<<<<<<< HEAD
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
-    }
-
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        //
-    }
-=======
      * Bootstrap any application services.
      *
      * @return void
@@ -51,5 +28,4 @@ class AppServiceProvider extends ServiceProvider
     }
 
     
->>>>>>> parent of 6a2d521... PH7CMS
 }
