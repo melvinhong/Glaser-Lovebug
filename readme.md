@@ -1,3 +1,12 @@
+# Group Member Information
+Student ID&nbsp;&nbsp;&nbsp;Name<br/>
+s3511881&nbsp;&nbsp;&nbsp;Melvin Hong<br/>
+s3656181&nbsp;&nbsp;&nbsp;Ezgi Orturk<br/>
+s3678831&nbsp;&nbsp;&nbsp;Jun Wang Lew<br/>
+&nbsp;&nbsp;&nbsp;Lin Yang<br/>
+&nbsp;&nbsp;&nbsp;De Kang Zeng</br>
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
