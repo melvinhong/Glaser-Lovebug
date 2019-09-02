@@ -4,11 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<<<<<<< HEAD
         <title>Laravel</title>
-=======
-        <title>LoveBug</title>
->>>>>>> parent of 6a2d521... PH7CMS
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -93,17 +89,18 @@
             @endif
 
             <div class="content">
-               <form class="" action="index.html" method="post">
-                    <input type="text" name="name" value="">
-                    <br><br>
-                    <input type="text" name="email" value="">
-                    <br><br>
-                    <input type="text" name="username" value="">
-                    <br><br>
-                    <input type="text" name="password" value="">
-                    <br><br>
-                    <button type="submit" name="button">Register</button>
-               </form>
+                <div class="title m-b-md">
+                    LoveBug
+                </div>
+
+                <div class="links">
+                    <a href="https://laravel.com/docs">Docs</a>
+                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel-news.com">News</a>
+                    <a href="https://blog.laravel.com">Blog</a>
+                    <a href="https://nova.laravel.com">Nova</a>
+                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
         </div>
