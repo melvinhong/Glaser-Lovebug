@@ -18,7 +18,23 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+
 </head>
+
+<style>
+  .footer {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+}
+</style>
+
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
@@ -77,20 +93,25 @@
         </main>
     </div>
 
-    <footer class="footer-basic-centered">
+    <footer class="footer">
+      <div class="container-fluid">
+        <p class="footer-company-motto text-black"><b>LoveBug</b></p>
 
-    <p class="footer-company-motto text-black">LoveBug</p>
+        <p class="footer-links">
+          <a class="text-black" href="{{ url('/') }}">Home</a>
+          ·
+          <a class="text-black" href="{{ url('/admin') }}">Admin</a>
+          ·
+          <a class="text-black" href="{{ url('/about') }}">About</a>
+        </p>
+        <div class="copyright" id="copyright">
+          &copy;
 
-    <p class="footer-links">
-        <a class="text-black" href="{{ url('/') }}">Home</a>
-        ·
-        <a class="text-black" href="{{ url('/admin') }}">Admin</a>
-        ·
-        <a class="text-black" href="{{ url('/about') }}">About</a>
-    </p>
-
-    <p class="footer-company-name">@2019 COPYRIGHT LOVEBUG</p>
-
-</footer>
+          <script>
+            document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+          </script>, Copyright LoveBug
+        </div>
+      </div>
+    </footer>
 </body>
 </html>

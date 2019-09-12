@@ -19,10 +19,10 @@ Admin | LoveBug
                 Name
               </th>
               <th>
-                Gender
+                E-mail
               </th>
               <th>
-                Age
+                Gender
               </th>
               <th class="text-right">
                 City
