@@ -39,7 +39,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'LoveBug') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -98,18 +98,16 @@
         <p class="footer-company-motto text-black"><b>LoveBug</b></p>
 
         <p class="footer-links">
-          <a class="text-black" href="{{ url('/') }}">Home</a>
-          ·
           <a class="text-black" href="{{ url('/admin') }}">Admin</a>
           ·
-          <a class="text-black" href="{{ url('/about') }}">About</a>
+          <a class="text-black" href="{{ url('/about') }}">About Us</a>
         </p>
         <div class="copyright" id="copyright">
           &copy;
 
           <script>
             document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-          </script>, Copyright LoveBug
+          </script>, Copyright by LoveBug.
         </div>
       </div>
     </footer>

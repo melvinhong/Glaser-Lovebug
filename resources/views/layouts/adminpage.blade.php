@@ -30,7 +30,7 @@
         <a class="simple-text logo-mini" href="{{ url('/admin') }}">
           <i class="now-ui-icons ui-2_favourite-28"></i>
         </a>
-        <a class="simple-text logo-lg" href="{{ url('/admin') }}" >
+        <a class="simple-text logo-lg" href="{{ url('/home') }}" >
           LoveBug
         </a>
 
