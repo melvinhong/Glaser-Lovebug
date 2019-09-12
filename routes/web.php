@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Auth::routes();
@@ -22,3 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin', function () {
     return view('admin.admin');
 })->middleware(['auth', 'auth.admin']);
+
+Route::get('/about', function () {
+    return view('about');
+});
