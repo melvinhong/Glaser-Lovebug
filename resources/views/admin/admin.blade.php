@@ -9,40 +9,24 @@ Admin | LoveBug
   <div class="col-md-12">
     <div class="card">
       <div class="card-header">
-        <h4 class="card-title">Dashboard</h4>
+        <h4 class="card-title">User Profile</h4>
       </div>
       <div class="card-body">
         <div class="table-responsive">
           <table class="table">
             <thead class=" text-primary">
-              <th>
-                Name
-              </th>
-              <th>
-                E-mail
-              </th>
-              <th>
-                Gender
-              </th>
-              <th class="text-right">
-                City
-              </th>
+              <th><b>Name</b></th>
+              <th><b>E-mail</b></th>
+              <!-- <th>Gender</th>
+              <th>City</th> -->
             </thead>
             <tbody>
-              <!-- <tr>
-                <td>
-                  Dakota Rice
-                </td>
-                <td>
-                  Niger
-                </td>
-                <td>
-                  Oud-Turnhout
-                </td>
-                <td class="text-right">
-                  $36,738
-                </td>
-              </tr> -->
+              @foreach($users as $user)
+              <tr>
+                <td>{{ $user->name }}</td>
+                <td>{{ $user->email }}</td>
+              </tr>
+              @endforeach
             </tbody>
           </table>
         </div>
