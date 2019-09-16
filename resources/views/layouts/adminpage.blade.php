@@ -27,7 +27,7 @@
     <!-- You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow" -->
     <div class="sidebar" data-color="orange">
       <div class="logo">
-        <a class="simple-text logo-mini" href="{{ url('/admin') }}">
+        <a class="simple-text logo-mini" href="{{ url('/home') }}">
           <i class="now-ui-icons ui-2_favourite-28"></i>
         </a>
         <a class="simple-text logo-lg" href="{{ url('/home') }}" >
@@ -40,16 +40,17 @@
         <ul class="nav">
           <li class="active ">
             <a href="/admin">
-              <i class="now-ui-icons design_app"></i>
-              <p>Dashboard</p>
+              <i class="now-ui-icons users_single-02"></i>
+
+              <p>User Profile</p>
             </a>
           </li>
 
           <li>
-            <a href="#">
-              <i class="now-ui-icons users_single-02"></i>
-              <p>User Profile</p>
-            </a>
+            <!-- <a href="#">
+              <i class="now-ui-icons design_app"></i>
+              <p>Dashboard</p>
+            </a> -->
           </li>
         </ul>
       </div>

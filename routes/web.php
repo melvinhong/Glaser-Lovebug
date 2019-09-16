@@ -26,3 +26,8 @@ Route::get('/admin', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::middleware(['auth', 'auth.admin'])->group(function() {
+  Route::resource('/admin', 'Admin\UserController', ['except' => ['show', 'create', 'store']]);
+});
+
