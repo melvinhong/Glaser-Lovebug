@@ -38,3 +38,7 @@ Route::get('/profile', function () {
 Route::get('/restricted', function () {
     return view('restricted');
 });
+
+Route::get('/settings', function () {
+    return view('settings');
+});
