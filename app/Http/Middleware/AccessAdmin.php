@@ -21,7 +21,7 @@ class AccessAdmin
           return $next($request);
         }
 
-        return redirect('admin');
-        // return redirect('home');
+        // return redirect('admin');
+        return redirect('restricted');
     }
 }

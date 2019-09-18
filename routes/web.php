@@ -23,10 +23,18 @@ Route::get('/admin', function () {
     return view('admin.admin');
 })->middleware(['auth', 'auth.admin']);
 
+Route::namespace('Admin')->name('admin.')->middleware(['auth', 'auth.admin'])->group(function() {
+  Route::resource('/admin', 'UserController', ['except' => ['show', 'create', 'store']]);
+});
+
 Route::get('/about', function () {
     return view('about');
 });
 
-Route::namespace('Admin')->name('admin.')->middleware(['auth', 'auth.admin'])->group(function() {
-  Route::resource('/admin', 'UserController', ['except' => ['show', 'create', 'store']]);
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/restricted', function () {
+    return view('restricted');
 });
