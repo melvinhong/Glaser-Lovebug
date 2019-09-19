@@ -3,14 +3,12 @@
 use Illuminate\Database\Seeder;
 use App\User;
 use App\Role;
+use Illuminate\Database\Seeder;
 
 class UsersTableSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
+
+     
     public function run()
     {
         User::truncate();
@@ -32,5 +30,6 @@ class UsersTableSeeder extends Seeder
 
         $admin->roles()->attach($adminRole);
         $user->roles()->attach($userRole);
+        factory(User::class, 15)->create();
     }
 }
