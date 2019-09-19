@@ -12,13 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+     return view('index');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/admin', function () {
     return view('admin.admin');
 })->middleware(['auth', 'auth.admin']);
@@ -42,3 +41,7 @@ Route::get('/restricted', function () {
 Route::get('/settings', function () {
     return view('settings');
 });
+
+Route::get('/contacts', 'ContactsController@get');
+Route::get('/conversation/{id}', 'ContactsController@getMessagesFor');
+Route::post('/conversation/send', 'ContactsController@send');
