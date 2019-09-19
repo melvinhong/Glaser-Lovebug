@@ -36,6 +36,7 @@ return [
     'channels' => [
         'stack' => [
             'driver' => 'stack',
+            // 'channels' => ['single'],
             'channels' => ['daily'],
             'ignore_exceptions' => false,
         ],
@@ -60,7 +61,6 @@ return [
             'emoji' => ':boom:',
             'level' => 'critical',
         ],
-
         'papertrail' => [
             'driver' => 'monolog',
             'level' => 'debug',
