@@ -24,11 +24,22 @@
 
 <body>
 
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="{{ url('/home') }}">Home</a>
+  <a href="{{ url('/profile') }}">My Profile</a>
+  <a href="{{ url('/settings') }}">Settings</a>
+  <a href="{{ url('/chatpage') }}">Messenger</a>
+  <a href="#">*add*</a>
+</div>
+
+<div id="main">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/home') }}">
+            <!-- <div class="container"> -->
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; LoveBug</span>
+                <!-- <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'LoveBug') }}
-                </a>
+                </a> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -58,7 +69,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="{{ url('/profile') }}">
+                                  <!-- <a class="dropdown-item" href="{{ url('/profile') }}">
                                       {{ __('My Profile') }}
                                   </a>
 
@@ -68,7 +79,7 @@
 
                                   <a class="dropdown-item" href="{{ url('/chatpage') }}">
                                       {{ __('Messenger') }}
-                                  </a>
+                                  </a> -->
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -110,5 +121,19 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
 </body>
 </html>
