@@ -96,6 +96,8 @@
           <a class="text-black" href="{{ url('/admin') }}">Admin</a>
           ·
           <a class="text-black" href="{{ url('/about') }}">About Us</a>
+          ·
+          <a class="text-black" href="{{ url('/chatpage') }}">Messenge</a>
         </p>
         <div class="copyright" id="copyright">
           &copy;

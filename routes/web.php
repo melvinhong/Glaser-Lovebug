@@ -17,6 +17,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/contacts', 'ContactsController@get');
+Route::get('/conversation/{id}', 'ContactsController@getMessagesFor');
+Route::post('/conversation/send', 'ContactsController@send');
+
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', function () {
@@ -31,6 +36,10 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/chatpage', function () {
+    return view('chatpage');
+});
+
 Route::get('/profile', function () {
     return view('profile');
 });
@@ -42,3 +51,7 @@ Route::get('/restricted', function () {
 Route::get('/settings', function () {
     return view('settings');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
