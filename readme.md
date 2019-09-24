@@ -3,7 +3,7 @@ Student ID&nbsp;&nbsp;&nbsp;Name<br/>
 s3511881&nbsp;&nbsp;&nbsp;Melvin Hong<br/>
 s3656181&nbsp;&nbsp;&nbsp;Ezgi Orturk<br/>
 s3678831&nbsp;&nbsp;&nbsp;Jun Wang Lew<br/>
-&nbsp;&nbsp;&nbsp;Lin Yang<br/>
+s3614753&nbsp;&nbsp;&nbsp;Lin Yang<br/>
 &nbsp;&nbsp;&nbsp;De Kang Zeng</br>
 
 
@@ -82,11 +82,11 @@ The Laravel framework is open-source software licensed under the [MIT license](h
 "# Glaser-Lovebug" 
 
 ## start here
-1.
-composer update
-2.
-php artisan migrate
-3.
-composer require pusher/pusher-php-server "~3.0"
-4.
-php artisan serve
+1.</br>
+composer update</br>
+2.</br>
+php artisan migrate</br>
+3.</br>
+composer require pusher/pusher-php-server "~3.0"</br>
+4.</br>
+php artisan serve</br>
