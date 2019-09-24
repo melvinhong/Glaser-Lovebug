@@ -87,7 +87,6 @@ composer update</br>
 1.5</br>
 -only if you already have a 'user' table on 'lovebug' at phpmyadmin-</br>
 -delete it and go next step-</br>
-</br>
 2.</br>
 php artisan migrate</br>
 3.</br>
