@@ -66,6 +66,10 @@
                                       {{ __('Settings') }}
                                   </a>
 
+                                  <a class="dropdown-item" href="{{ url('/chatpage') }}">
+                                      {{ __('Messenger') }}
+                                  </a>
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -86,7 +90,7 @@
         <main class="py-4">
             @yield('content')
         </main>
-    </div>
+
 
     <footer class="footer">
       <div class="container-fluid">
@@ -96,8 +100,6 @@
           <a class="text-black" href="{{ url('/admin') }}">Admin</a>
           ·
           <a class="text-black" href="{{ url('/about') }}">About Us</a>
-          ·
-          <a class="text-black" href="{{ url('/chatpage') }}">Messenge</a>
         </p>
         <div class="copyright" id="copyright">
           &copy;
