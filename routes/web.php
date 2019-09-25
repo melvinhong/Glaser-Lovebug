@@ -21,7 +21,6 @@ Route::get('/contacts', 'ContactsController@get');
 Route::get('/conversation/{id}', 'ContactsController@getMessagesFor');
 Route::post('/conversation/send', 'ContactsController@send');
 
-
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', function () {
@@ -37,11 +36,11 @@ Route::get('/about', function () {
 });
 
 Route::get('/chatpage', function () {
-    return view('chatpage');
+    return view('user.chatpage');
 });
 
 Route::get('/profile', function () {
-    return view('profile');
+    return view('user.profile');
 });
 
 Route::get('/restricted', function () {
@@ -49,9 +48,9 @@ Route::get('/restricted', function () {
 });
 
 Route::get('/settings', function () {
-    return view('settings');
+    return view('user.settings');
 });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profile/info', function () {
+    return view('user.profile.info');
+});

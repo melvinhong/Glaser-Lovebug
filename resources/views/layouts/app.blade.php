@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -36,7 +37,7 @@
 <div id="main">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <!-- <div class="container"> -->
-              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; LoveBug</span>
+              <span style="font-size:20px; cursor:pointer;" onclick="openNav()">&#9776; LoveBug</span>
                 <!-- <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'LoveBug') }}
                 </a> -->
