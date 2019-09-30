@@ -1,1 +1,14 @@
-<h1>About Us</h1>
+@extends('layouts.app')
+
+@section('content')
+<!-- <div class="container"> -->
+  <div class="aboutusbackground-image">
+    <!-- <img src="../assets/img/aboutusbackground2.jpg"> -->
+  </div>
+
+<div class="aboutus-text">
+  <h1 style="font-size:50px">WHO WE ARE</h1>
+  <p>Some text here</p>
+</div>
+</div>
+@endsection

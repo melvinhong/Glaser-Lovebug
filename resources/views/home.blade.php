@@ -5,11 +5,11 @@
     <div class="row justify-content-left">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">My Profile</div>
+                <div class="card-header">Lovebug Home Page</div>
 
                 <div class="card-body">
 
-                    You are logged in!
+                    Lovebug
                 </div>
             </div>
         </div>

@@ -124,6 +124,7 @@
       <div class="panel-header panel-header-sm">
       </div>
       <div class="content">
+        @include('alerts.alerts')
         @yield('content')
       </div>
 
@@ -133,7 +134,7 @@
             &copy;
             <script>
               document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-            </script>, Copyright LoveBug
+            </script>, Copyright by LoveBug
           </div>
         </div>
       </footer>

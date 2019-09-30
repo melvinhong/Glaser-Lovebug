@@ -18,30 +18,29 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
-<style>
-  .footer {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    bottom: 0;
-    position: fixed;
-}
-</style>
 
 <body>
-    <div id="app">
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="{{ url('/home') }}">Home</a>
+  <a href="{{ url('/profile') }}">My Profile</a>
+  <a href="{{ url('/settings') }}">Settings</a>
+  <a href="{{ url('/chatpage') }}">Messenger</a>
+  <a href="#">*add*</a>
+</div>
+
+<div id="main">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/home') }}">
+            <!-- <div class="container"> -->
+              <span style="font-size:20px; cursor:pointer;" onclick="openNav()">&#9776; LoveBug</span>
+                <!-- <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'LoveBug') }}
-                </a>
+                </a> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -71,6 +70,18 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                  <!-- <a class="dropdown-item" href="{{ url('/profile') }}">
+                                      {{ __('My Profile') }}
+                                  </a>
+
+                                  <a class="dropdown-item" href="{{ url('/settings') }}">
+                                      {{ __('Settings') }}
+                                  </a>
+
+                                  <a class="dropdown-item" href="{{ url('/chatpage') }}">
+                                      {{ __('Messenger') }}
+                                  </a> -->
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -91,7 +102,7 @@
         <main class="py-4">
             @yield('content')
         </main>
-    </div>
+
 
     <footer class="footer">
       <div class="container-fluid">
@@ -111,5 +122,19 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
 </body>
 </html>

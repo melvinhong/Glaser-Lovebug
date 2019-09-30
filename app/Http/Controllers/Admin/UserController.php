@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -49,6 +50,12 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        if(Auth::user()->id == $id)
+        {
+          return redirect()->route('admin.admin.index')->with('warning', "Admin can't be deleted.");
+        }
+
+        User::destroy($id);
+        return redirect()->route('admin.admin.index')->with('success', 'User has been deleted.');
     }
 }

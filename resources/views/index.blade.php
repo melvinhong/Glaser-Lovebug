@@ -1,4 +1,4 @@
-@extends('layouts.homepage')
+@extends('layouts.indexpage')
 
 @section('title')
 LoveBug

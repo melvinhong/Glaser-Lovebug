@@ -17,6 +17,7 @@ Admin | LoveBug
             <thead class=" text-primary">
               <th><b>Name</b></th>
               <th><b>E-mail</b></th>
+              <th><b>Actions</b></th>
               <!-- <th>Gender</th>
               <th>City</th> -->
             </thead>
@@ -25,6 +26,13 @@ Admin | LoveBug
               <tr>
                 <td>{{ $user->name }}</td>
                 <td>{{ $user->email }}</td>
+                <td>
+                  <form action="{{ route('admin.admin.destroy', $user->id) }}" method="POST">
+                    @csrf
+                    {{ method_field('DELETE')}}
+                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                  </form>
+                </td>
               </tr>
               @endforeach
             </tbody>
