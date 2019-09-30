@@ -32,7 +32,22 @@
   <a href="{{ url('/profile') }}">My Profile</a>
   <a href="{{ url('/settings') }}">Settings</a>
   <a href="{{ url('/chatpage') }}">Messenger</a>
-  <a href="#">*add*</a>
+  <a href="{{ url('/about') }}">About Us</a>
+  <a></a><a></a><a></a><a></a>
+  <a></a><a></a><a></a><a></a>
+  <a></a><a></a><a></a><a></a>
+  <a></a><a></a><a></a><a></a>
+  <a></a><a></a><a></a><a></a>
+  <a></a><a></a><a></a><a></a>
+  <a></a><a></a>
+  <a href="{{ url('/admin') }}">Admin</a>
+  <div class="copyright" id="copyright">
+    &copy;
+
+    <script>
+      document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+    </script>, Copyright by LoveBug.
+  </div>
 </div>
 
 <div id="main">
@@ -104,37 +119,13 @@
             @yield('content')
         </main>
 
-
-    <footer class="footer">
-      <div class="container-fluid">
-        <p class="footer-company-motto text-black"><b>LoveBug</b></p>
-
-        <p class="footer-links">
-          <a class="text-black" href="{{ url('/admin') }}">Admin</a>
-          ·
-          <a class="text-black" href="{{ url('/about') }}">About Us</a>
-        </p>
-        <div class="copyright" id="copyright">
-          &copy;
-
-          <script>
-            document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-          </script>, Copyright by LoveBug.
-        </div>
-      </div>
-    </footer>
-
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
       }
 
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
-        document.body.style.backgroundColor = "white";
       }
     </script>
 </body>
