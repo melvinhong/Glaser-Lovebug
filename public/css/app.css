@@ -98,7 +98,6 @@ body {
 
 #main {
   transition: margin-left .5s;
-  background-color: pink;
 }
 
 @media screen and (max-height: 450px) {
