@@ -30,4 +30,3 @@ Route::get('/about', function () {
 Route::middleware(['auth', 'auth.admin'])->group(function() {
   Route::resource('/admin', 'Admin\UserController', ['except' => ['show', 'create', 'store']]);
 });
-
