@@ -7,7 +7,7 @@
       <div class="profile-card">
 
         <a href="{{ url('/profile/info') }}"><button class ="profile-button">Edit Info</button></a>
-        <img src="../assets/img/male.jpg" style="width:100%">
+        <img src="{{ Auth::user()->profile_image }}" style="width:100%">
         <h1 style="margin: 20px;">Name: </h1>
         <h2 style="margin: 20px;">{{ Auth::user()->name }} </h2>
         <h1 style="margin: 20px;">Age:</h1>
