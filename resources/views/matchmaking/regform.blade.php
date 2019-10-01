@@ -115,7 +115,7 @@
 					<td>Relationship perfer::</td>
 					<td>
 						<select name="relationship" required>
-							
+
 							<option value="shortterm"> Short term</option>
 							<option value="longterm">Long term</option>
 							<option value="ons">One night stand</option>
@@ -127,7 +127,7 @@
 					<td>Occupation:</td>
 					<td>
 						<select name="occupation" required>
-						
+
 							<option value="student">Student</option>
 							<option value="engineer">Engineer</option>
 							<option value="worker">Worker</option>
@@ -138,19 +138,19 @@
 							<option value="artist">Artist</option>
 							<option value="doctor">doctor</option>
 							<option value="nottosay">Others/perfer not to say</option>
-							
-							
+
+
 						</select>
 					</td>
 				</tr>
 				<tr>
-					
+
 					<td><input type="submit" value="Submit"></td>
-					
-				
-					
-					
-					
+
+
+
+
+
 				</tr>
 			</table>
 		</form>

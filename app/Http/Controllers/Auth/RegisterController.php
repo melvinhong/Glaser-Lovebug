@@ -52,6 +52,17 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            // 'age' => ['required', 'string', 'max:255'],
+            // 'gender' => ['required', 'string', 'max:255'],
+            // 'location' => ['required', 'string', 'max:255'],
+            // 'ethnic' => ['required', 'string', 'max:255'],
+            // 'haircolor' => ['required', 'string', 'max:255'],
+            // 'eyecolor' => ['required', 'string', 'max:255'],
+            // 'skincolor' => ['required', 'string', 'max:255'],
+            // 'hobbies' => ['required', 'string', 'max:255'],
+            // 'relationship' => ['required', 'string', 'max:255'],
+            // 'occupation' => ['required', 'string', 'max:255'],
+
         ]);
     }
 
@@ -67,6 +78,17 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            // 'age' =>$data['age'],
+            // 'gender' =>$data['gender'],
+            // 'location' =>$data['location'],
+            // 'ethnic' =>$data['ethnic'],
+            // 'haircolor' =>$data['haircolor'],
+            // 'eyecolor' =>$data['eyecolor'],
+            // 'skincolor' =>$data['skincolor'],
+            // 'hobbies' =>$data['hobbies'],
+            // 'relationship' =>$data['relationship'],
+            // 'occupation' =>$data['occupation'],
+
         ]);
     }
 }
