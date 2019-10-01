@@ -15,7 +15,9 @@ class AddUserinfoUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
+
             $table->string('age')->nullable();
+            $table->string('gender')->nullable();
             $table->string('location')->nullable();
             $table->string('ethnic')->nullable();
             $table->string('haircolor')->nullable();

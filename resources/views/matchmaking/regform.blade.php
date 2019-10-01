@@ -1,13 +1,8 @@
-<!DOCTYPE HTML>
-<html>
+@extends('layouts.app')
 
-	<head>
-		<title>Register Form</title>
-	</head>
-
-	<body>
+@section('content')
 		<h1>Lovebug User information</h1>
-		<form action="insert.php" method="POST">
+		
 			<table>
 				<tr>
 					<td>Name :</td>
@@ -153,7 +148,5 @@
 
 				</tr>
 			</table>
-		</form>
-	</body>
 
-</html>
+	@endsection
