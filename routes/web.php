@@ -23,6 +23,7 @@ Route::post('/conversation/send', 'ContactsController@send');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+// Routes for Admin
 Route::get('/admin', function () {
     return view('admin.admin');
 })->middleware(['auth', 'auth.admin']);
@@ -36,22 +37,14 @@ Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::view('/profile/info', 'user.profile.info');
 Route::post('/profile/info', 'ProfileController@store');
 
-Route::get('/chatpage', function () {
-    return view('user.chatpage');
-});
+// Routes for Messenger
+Route::view('/messenger', 'user.chatpage');
 
-Route::get('/profile', function () {
-    return view('user.profile');
-});
+// Route for About Us
+Route::view('/about', 'about');
 
-Route::get('/restricted', function () {
-    return view('restricted');
-});
+// Routes for restrcting user to enter Admin panel.
+Route::view('/restricted', 'restricted');
 
-Route::get('/settings', function () {
-    return view('user.settings');
-});
-
-Route::get('/profile/info', function () {
-    return view('user.profile.info');
-});
+// Routes for Settings.
+Route::view('/settings', 'user.settings');

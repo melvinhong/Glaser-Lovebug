@@ -5,6 +5,8 @@
     <div class="row justify-content-left">
       <div class="col-md-2 "></div>
         <div class="col-md-8">
+
+          <h1>You can change your matchmaking perfomance on setting page</h1>
           <div id="stacked-cards-block" class="stackedcards stackedcards--animatable init">
             <div class="stackedcards-container">
               <div class="card">

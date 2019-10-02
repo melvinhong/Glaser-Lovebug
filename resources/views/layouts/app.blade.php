@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" style="background-color: pink;">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +31,7 @@
   <a href="{{ url('/home') }}">Home</a>
   <a href="{{ url('/profile') }}">My Profile</a>
   <a href="{{ url('/settings') }}">Settings</a>
-  <a href="{{ url('/chatpage') }}">Messenger</a>
+  <a href="{{ url('/messenger') }}">Messenger</a>
   <a href="{{ url('/about') }}">About Us</a>
   <a></a><a></a><a></a><a></a>
   <a></a><a></a><a></a><a></a>
@@ -116,6 +116,9 @@
         </nav>
 
         <main class="py-4">
+          <div class="container">
+            @include('alerts.alerts')
+          </div>
             @yield('content')
         </main>
 

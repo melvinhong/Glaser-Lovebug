@@ -1,13 +1,8 @@
-<!DOCTYPE HTML>
-<html>
+@extends('layouts.app')
 
-	<head>
-		<title>Register Form</title>
-	</head>
-
-	<body>
+@section('content')
 		<h1>Lovebug User information</h1>
-		<form action="insert.php" method="POST">
+
 			<table>
 				<tr>
 					<td>Name :</td>
@@ -115,7 +110,7 @@
 					<td>Relationship perfer::</td>
 					<td>
 						<select name="relationship" required>
-							
+
 							<option value="shortterm"> Short term</option>
 							<option value="longterm">Long term</option>
 							<option value="ons">One night stand</option>
@@ -127,7 +122,7 @@
 					<td>Occupation:</td>
 					<td>
 						<select name="occupation" required>
-						
+
 							<option value="student">Student</option>
 							<option value="engineer">Engineer</option>
 							<option value="worker">Worker</option>
@@ -138,22 +133,20 @@
 							<option value="artist">Artist</option>
 							<option value="doctor">doctor</option>
 							<option value="nottosay">Others/perfer not to say</option>
-							
-							
+
+
 						</select>
 					</td>
 				</tr>
 				<tr>
-					
+
 					<td><input type="submit" value="Submit"></td>
-					
-				
-					
-					
-					
+
+
+
+
+
 				</tr>
 			</table>
-		</form>
-	</body>
 
-</html>
+	@endsection
