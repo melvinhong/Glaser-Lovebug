@@ -31,9 +31,10 @@ Route::namespace('Admin')->name('admin.')->middleware(['auth', 'auth.admin'])->g
   Route::resource('/admin', 'UserController', ['except' => ['show', 'create', 'store']]);
 });
 
-Route::get('/about', function () {
-    return view('about');
-});
+// Routes for managing profile.
+Route::get('/profile', 'ProfileController@index')->name('profile');
+Route::view('/profile/info', 'user.profile.info');
+Route::post('/profile/info', 'ProfileController@store');
 
 Route::get('/chatpage', function () {
     return view('user.chatpage');
