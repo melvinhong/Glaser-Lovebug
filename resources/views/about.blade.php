@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+About Us | LoveBug
+@endsection
+
 @section('content')
 <!-- <div class="container"> -->
   <div class="aboutusbackground-image">
