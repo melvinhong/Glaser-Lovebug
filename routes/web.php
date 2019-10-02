@@ -33,7 +33,7 @@ Route::namespace('Admin')->name('admin.')->middleware(['auth', 'auth.admin'])->g
 });
 
 // Routes for managing profile.
-Route::view('/profile', 'user.profile');
+Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::view('/profile/info', 'user.profile.info');
 Route::post('/profile/info', 'ProfileController@store');
 
