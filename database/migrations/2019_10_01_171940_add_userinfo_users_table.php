@@ -26,6 +26,18 @@ class AddUserinfoUsersTable extends Migration
             $table->string('hobbies')->nullable();
             $table->string('relationship')->nullable();
             $table->string('occupation')->nullable();
+
+            $table->string('ageper1')->nullable();
+            $table->string('ageper2')->nullable();
+            $table->string('genderper')->nullable();
+            $table->string('locationper')->nullable();
+            $table->string('ethnicper')->nullable();
+            $table->string('haircolorper')->nullable();
+            $table->string('eyecolorper')->nullable();
+            $table->string('skincolorper')->nullable();
+            $table->string('hobbiesper')->nullable();
+            $table->string('relationshipper')->nullable();
+            $table->string('occupationper')->nullable();
         });
     }
 

@@ -5,8 +5,11 @@
     <div class="row justify-content-left">
       <div class="col-md-2 "></div>
         <div class="col-md-8">
+          <h1>You can change your matchmaking perfomance on setting page</h1>
           <div id="stacked-cards-block" class="stackedcards stackedcards--animatable init">
             <div class="stackedcards-container">
+
+
               <div class="card">
                 <div class="card-content">
                   <div class="card-image"><img src="https://image.ibb.co/gQsq07/Adventure_and_Outdoor.png" class="img-fluid"></div>
@@ -16,6 +19,8 @@
                   </div>
                 </div>
               </div>
+
+
             </div>
 
             <div class="stackedcards--animatable stackedcards-overlay top"><img src="https://image.ibb.co/m1ykYS/rank_army_star_2_3x.png"  width="auto" height="auto"/></div>

@@ -2,7 +2,7 @@
 
 @section('content')
 		<h1>Lovebug User information</h1>
-		
+
 			<table>
 				<tr>
 					<td>Name :</td>
