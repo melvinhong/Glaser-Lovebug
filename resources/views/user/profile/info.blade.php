@@ -14,7 +14,7 @@
                     <div class="card-body">
                       <div class="form-group row">
                         <div class="profile-header-img col-4 mx-auto d-flex justify-content-center flex-wrap">
-                          <img class="rounded-circle" src="/storage/avatars/{{ $user->profile_image }}"  style="width: 200px; height:200px;"/>
+                          <img class="rounded-circle" src="/storage/Profile_Picture/{{ Auth::user()->profile_image }}" style="width: 200px; height:200px;"/>
                         </div>
                       </div>
                       <div class="form-group row"></div>
