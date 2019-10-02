@@ -24,9 +24,9 @@ Settings | LoveBug
 
           <div class="form-group row">
             <label for="age" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Age Range</label>
-            <div class="col-md-3">
+            <div class="col-md-3">From
               <select id="ageper1" type="text" class="form-control" name="ageper1">
-                <option selected hidden>From</option>
+
                 <option value="18">18</option>
                 <option value="19">19</option>
                 <option value="20">20</option>
@@ -62,9 +62,9 @@ Settings | LoveBug
                 <option value="50">50 or above</option>
               </select>
             </div>
-            <div class="col-md-3">
-              <select id="ageper1" type="text" class="form-control" name="ageper1">
-                <option selected hidden>To</option>
+            <div class="col-md-3">To
+              <select id="ageper2" type="text" class="form-control" name="ageper2">
+
                 <option value="18">18</option>
                 <option value="19">19</option>
                 <option value="20">20</option>
@@ -106,7 +106,7 @@ Settings | LoveBug
             <label for="gender" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Gender</label>
               <div class="col-md-6">
                 <select id="genderper" type="text" class="form-control" name="genderper">
-                  <option selected hidden>---</option>
+
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
                   <option value="Transgender">Transgender</option>
@@ -118,7 +118,7 @@ Settings | LoveBug
             <label for="location" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Location</label>
               <div class="col-md-6">
                 <select id="locationper" type="text" class="form-control" name="locationper">
-                  <option selected hidden>---</option>
+
                   <option value="Victoria">Victoria</option>
                   <option value="New South Wales">New South Wales</option>
                   <option value="Queensland">Queensland</option>
@@ -134,7 +134,7 @@ Settings | LoveBug
             <label for="ethnic" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Ethnic Background</label>
               <div class="col-md-6">
                 <select id="ethnicper" type="text" class="form-control" name="ethnicper">
-                  <option selected hidden>---</option>
+
                   <option value="British">British</option>
                   <option value="Irish">Irish</option>
                   <option value="Italian">Italian</option>
@@ -153,7 +153,7 @@ Settings | LoveBug
             <label for="haircolorper" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Haircolor</label>
               <div class="col-md-6">
                 <select id="haircolor" type="text" class="form-control" name="haircolorper">
-                  <option selected hidden>---</option>
+
                   <option value="Black">Black</option>
                   <option value="Brown">Brown</option>
                   <option value="Blond">Blond</option>
@@ -168,7 +168,7 @@ Settings | LoveBug
             <label for="eyecolor" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Eyecolor</label>
               <div class="col-md-6">
                 <select id="eyecolorper" type="text" class="form-control" name="eyecolorper">
-                  <option selected hidden>---</option>
+
                   <option value="Amber">Amber</option>
                   <option value="Blue">Blue</option>
                   <option value="Brown">Brown</option>
@@ -186,7 +186,7 @@ Settings | LoveBug
             <label for="skincolor" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Skincolor</label>
               <div class="col-md-6">
                 <select id="skincolorper" type="text" class="form-control" name="skincolorper">
-                  <option selected hidden>---</option>
+
                   <option value="Black">Black</option>
                   <option value="Yellow">Yellow</option>
                   <option value="White">White</option>
@@ -199,7 +199,7 @@ Settings | LoveBug
             <label for="hobbies" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Hobbies</label>
               <div class="col-md-6">
                 <select id="hobbiesper" type="text" class="form-control" name="hobbiesper">
-                  <option selected hidden>---</option>
+
                   <option value="Traditional Sports">Traditional Sports</option>
                   <option value="Outdoor Adventures">Outdoor Adventures</option>
                   <option value="Watch TV Series/Movies">Watch TV Series/Movies</option>
@@ -213,7 +213,7 @@ Settings | LoveBug
             <label for="relationship" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Preferred Relationship</label>
               <div class="col-md-6">
                 <select id="relationshipper" type="text" class="form-control" name="relationshipper">
-                  <option selected hidden>---</option>
+
                   <option value="Short-term">Short-term</option>
                   <option value="Long-term">Long-term</option>
                   <option value="One Night Stand">One Night Stand</option>
@@ -226,7 +226,7 @@ Settings | LoveBug
             <label for="occupation" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Occupation</label>
               <div class="col-md-6">
                 <select id="occupationper" type="text" class="form-control" name="occupationper">
-                  <option selected hidden>---</option>
+
                   <option value="Student">Student</option>
                   <option value="Engineer">Engineer</option>
                   <option value="Worker">Worker</option>
