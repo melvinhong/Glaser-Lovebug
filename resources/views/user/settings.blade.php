@@ -3,6 +3,7 @@
 @section('content')
 
 <div class="container">
+  <script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
     <h1>Settings<h1>
   </div>
   <table>
@@ -10,7 +11,8 @@
     <tr>
       <td>Age :</td>
       <td>From
-        <select name="agestart" required>
+        <select name="agestart"  >
+          <option value="" selected disabled hidden>{{ Auth::user()->ageper1 }}</option>
           <option value="18">18</option>
           <option value="19">19</option>
           <option value="20">20</option>
@@ -46,7 +48,9 @@
           <option value="50">50 or above</option>
         </select>
         to
-        <select name="ageend" required>
+        <select name="ageend" >
+          <option value="" selected disabled hidden>{{ Auth::user()->ageper2 }}</option>
+
           <option value="18">18</option>
           <option value="19">19</option>
           <option value="20">20</option>
@@ -87,16 +91,20 @@
     <tr>
       <td>Gender :</td>
       <td>
-        <input type="radio" name="gender" value="female" required>Female
-        <input type="radio" name="gender" value="male" required>Male
-        <input type="radio" name="gender" value="transgender" required>Transgender
-        <input type="radio" name="gender" value="nottosay" required>Prefer not to say
+        <select name="gender">
+          <option value="" selected disabled hidden>{{ Auth::user()->genderper }}</option>
+          <option type="radio" name="gender" value="male" >Male
+        <option type="radio" name="gender" value="female" >Female
+        <option type="radio" name="gender" value="transgender">Transgender
+        <option type="radio" name="gender" value="nottosay" >Prefer not to say
       </td>
     </tr>
     <tr>
       <td>Location :</td>
       <td>
-        <select name="location" required>
+        <select name="location" >
+          <option value="" selected disabled hidden>{{ Auth::user()->locationper }}</option>
+
 
           <option value="vic">Victoria</option>
           <option value="nsw">New South Wales</option>
@@ -110,7 +118,9 @@
     <tr>
       <td>Ethnic background:</td>
       <td>
-        <select name="ethnic" required>
+        <select name="ethnic" >
+          <option value="" selected disabled hidden>{{ Auth::user()->ethnicper }}</option>
+
           <option value="british">British</option>
           <option value="irish">Irish</option>
           <option value="italian">Italian</option>
@@ -127,7 +137,9 @@
     <tr>
       <td>Hair color :</td>
       <td>
-        <select name="haircolor" required>
+        <select name="haircolor" >
+          <option value="" selected disabled hidden>{{ Auth::user()->haircolorper }}</option>
+
           <option value="black">black</option>
           <option value="brown">brown</option>
           <option value="blond">blond</option>
@@ -140,7 +152,9 @@
     <tr>
       <td>Eye color :</td>
       <td>
-        <select name="eyecolor" required>
+        <select name="eyecolor" >
+          <option value="" selected disabled hidden>{{ Auth::user()->eyecolorper }}</option>
+
           <option value="amber">amber</option>
           <option value="blue">blue</option>
           <option value="brown">brown</option>
@@ -157,8 +171,8 @@
     <tr>
       <td>Skin color :</td>
       <td>
-        <select name="skincolor" required>
-          <option selected hidden="">If your skin color not list here plz contact us</option>
+        <select name="skincolor" >
+          <option value="" selected disabled hidden>{{ Auth::user()->skincolorper }}</option>
           <option value="black">black</option>
           <option value="yelllow">yellow</option>
           <option value="white">white</option>
@@ -169,8 +183,9 @@
     <tr>
       <td>Hobbies:</td>
       <td>
-        <select name="hobbies" required>
-          <option selected hidden value=""> more hobbies on adding...</option>
+        <select name="hobbies" >
+          <option value="" selected disabled hidden>{{ Auth::user()->hobbiesper }}</option>
+
           <option value="tsports"> traditional sports</option>
           <option value="advt">outdoor advantures</option>
           <option value="tvs">watch tv series/movies</option>
@@ -181,7 +196,9 @@
     <tr>
       <td>Relationship prefer:</td>
       <td>
-        <select name="relationship" required>
+        <select name="relationship" >
+          <option value="" selected disabled hidden>{{ Auth::user()->relationshipper }}</option>
+
 
           <option value="shortterm"> Short term</option>
           <option value="longterm">Long term</option>
@@ -191,7 +208,29 @@
       </td>
     </tr>
     <tr>
-      <td><input type="submit" value="Submit"></td>
+      <td>Occupation:</td>
+      <td>
+        <select name="occupation" required>
+
+            <option value="" selected disabled hidden>{{ Auth::user()->occupationper }}</option>
+
+          <option value="student">Student</option>
+          <option value="engineer">Engineer</option>
+          <option value="worker">Worker</option>
+          <option value="administrator">Administrator</option>
+          <option value="teacher">teacher</option>
+          <option value="accountant">Accountant</option>
+          <option value="auditor">Auditor</option>
+          <option value="artist">Artist</option>
+          <option value="doctor">doctor</option>
+          <option value="nottosay">Others/perfer not to say</option>
+
+
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="submit" value="Update"></td>
     </tr>
   </table>
 @endsection
