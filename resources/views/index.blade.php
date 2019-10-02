@@ -289,7 +289,6 @@ LoveBug
                               <option value="Male">Male</option>
                               <option value="Female">Female</option>
                               <option value="Transgender">Transgender</option>
-                              <option value="Prefer Not to Say">Prefer Not to Say</option>
                             </select>
                             @error('gender')
                                 <span class="invalid-feedback" role="alert">
