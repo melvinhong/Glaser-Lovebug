@@ -210,7 +210,7 @@ Settings | LoveBug
           </div>
 
           <div class="form-group row">
-            <label for="relationship" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Skincolor</label>
+            <label for="relationship" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Preferred Relationship</label>
               <div class="col-md-6">
                 <select id="relationshipper" type="text" class="form-control" name="relationshipper">
                   <option selected hidden>---</option>
@@ -223,7 +223,7 @@ Settings | LoveBug
           </div>
 
           <div class="form-group row">
-            <label for="occupation" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Skincolor</label>
+            <label for="occupation" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Occupation</label>
               <div class="col-md-6">
                 <select id="occupationper" type="text" class="form-control" name="occupationper">
                   <option selected hidden>---</option>
