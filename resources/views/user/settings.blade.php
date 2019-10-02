@@ -14,9 +14,9 @@ Settings | LoveBug
         <div class="card-body">
 
           <div class="form-group row" style="text-align: center;">
-            <label class="col-md-12 col-form-label" style="font-weight: bold; font-size: 25px;">Change Matchmaking Perfomance</label>
+            <label class="col-md-12 col-form-label" style="font-weight: bold; font-size: 25px;">My Matchmaking Perfomance</label>
           </div>
-
+          <FORM ACTION="" METHOD="" NAME="editForm">
           <div class="form-group row">
             <label for="age" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Age Range</label>
             <div class="col-md-3">
@@ -238,10 +238,10 @@ Settings | LoveBug
 
           <div class="form-group row mb-0 mt-5">
               <div class="col-md-8 offset-md-4">
-                  <a href="#"><button type="submit" class="btn btn-primary">Update</button></a>
+                  <a href="#"><button type="submit" class="btn btn-primary">Change Settings</button></a>
               </div>
           </div>
-
+        </FORM>
         </div>
     </div>
   </div>
