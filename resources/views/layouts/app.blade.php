@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" style="background-color: pink;">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -82,6 +82,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                  <img src="/storage/Profile_Picture/{{ Auth::user()->profile_image }}" style="width: 32px; height: 32px; border-radius: 50%; margin-right: 10px;">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -101,6 +102,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
+                                        <i class="fa fa-btn fa-sign-out"></i>
                                         {{ __('Logout') }}
                                     </a>
 

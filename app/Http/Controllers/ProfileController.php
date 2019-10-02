@@ -5,12 +5,35 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
+use Image;
 
 class ProfileController extends Controller
 {
-    public function store()
+  public function __construct()
     {
+        $this->middleware('auth');
+    }
+
+    public function index()
+    {
+        return view('user.profile');
+    }
+
+    public function store(Request $request)
+    {
+
+      if ($request->hasFile('profile_image'))
+      {
+        $profile_image = $request->file('profile_image');
+        $filename = time() . '.' . $profile_image->getClientOriginalExtension();
+        Image::make($profile_image)->resize(300,300)->save( public_path ('/storage/Profile_Picture/' . $filename));
+      } else {
+        return redirect('/profile')->with('success', 'Profile has been updated.');;
+      }
+
       $user = Auth::user();
+      $user->profile_image = $filename;
+      // $user->profile_image = request()->file('profile_image')->store('Profile_Picture');
       $user->name = request()->input('name');
       $user->age = request()->input('age');
       $user->gender = request()->input('gender');
