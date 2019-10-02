@@ -17,6 +17,10 @@ Settings | LoveBug
             <label class="col-md-12 col-form-label" style="font-weight: bold; font-size: 25px;">My Matchmaking Perfomance</label>
           </div>
           <FORM ACTION="" METHOD="" NAME="editForm">
+
+            {{ csrf_field() }}
+            {{ method_field('patch') }}
+            
           <div class="form-group row">
             <label for="age" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Age Range</label>
             <div class="col-md-3">
