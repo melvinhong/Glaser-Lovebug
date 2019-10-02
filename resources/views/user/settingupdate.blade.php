@@ -9,8 +9,8 @@
 
 
   <table>
-    <h2> My matchmaking perfomance</h2>
-    <form name="editForm" >
+    <h2> Change matchmaking perfomance</h2>
+    <form name="editForm" method="POST">
 
         {{ csrf_field() }}
         {{ method_field('patch') }}
@@ -230,7 +230,7 @@
       </td>
     </tr>
     <tr>
-      <td><a href="{{ url('/settingupdate') }}"><button type="submit">Change Setting<a></td>
+      <td><a href="{{ url('/settings') }}"><button type="submit">Update<a></td>
     </tr>
   </form>
   </table>

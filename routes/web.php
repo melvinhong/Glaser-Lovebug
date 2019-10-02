@@ -48,3 +48,5 @@ Route::view('/restricted', 'restricted');
 
 // Routes for Settings.
 Route::view('/settings', 'user.settings');
+
+Route::view('/settingupdate', 'user.settingupdate');
