@@ -48,5 +48,3 @@ Route::view('/restricted', 'restricted');
 
 // Routes for Settings.
 Route::view('/settings', 'user.settings');
-
-Route::get('/settings','SettingController@update');

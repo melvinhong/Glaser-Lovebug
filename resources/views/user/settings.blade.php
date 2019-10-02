@@ -6,18 +6,19 @@
   <script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
     <h1>Settings<h1>
   </div>
-{!! Form::open(['url=>'settings','method'='post','name' = 'editForm', 'role'='form']) !!}
 
-    {{ csrf_field() }}
-    {{ method_field('patch') }}
 
   <table>
     <h2> Change matchmaking perfomance</h2>
+    <form name="editForm" method="POST">
+
+        {{ csrf_field() }}
+        {{ method_field('patch') }}
     <tr>
       <td>Age :</td>
       <td>From
-        <select name="age1per"  >
-          <option value="{{ Auth::user()->ageper1 }}" selected disabled hidden>{{ Auth::user()->ageper1 }}</option>
+        <select name="ageper1" >
+
           <option value="18">18</option>
           <option value="19">19</option>
           <option value="20">20</option>
@@ -53,8 +54,8 @@
           <option value="50">50 or above</option>
         </select>
         to
-        <select name="age2per" >
-          <option value="{{ Auth::user()->ageper2 }}" selected disabled hidden>{{ Auth::user()->ageper2 }}</option>
+        <select name="ageper2" >
+
 
           <option value="18">18</option>
           <option value="19">19</option>
@@ -97,7 +98,6 @@
       <td>Gender :</td>
       <td>
         <select name="genderper">
-          <option value="{{ Auth::user()->genderper }}" selected disabled hidden>{{ Auth::user()->genderper }}</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Transgender">Transgender</option>
@@ -107,7 +107,6 @@
       <td>Location :</td>
       <td>
         <select name="locationper" >
-          <option value="{{ Auth::user()->locationper }}" selected disabled hidden>{{ Auth::user()->locationper }}</option>
 
 
           <option value="Victoria">Victoria</option>
@@ -124,7 +123,6 @@
       <td>Ethnic background:</td>
       <td>
         <select name="ethnicper" >
-          <option value="{{ Auth::user()->ethnicper }}" selected disabled hidden>{{ Auth::user()->ethnicper }}</option>
 
           <option value="British">British</option>
           <option value="Irish">Irish</option>
@@ -143,7 +141,6 @@
       <td>Hair color :</td>
       <td>
         <select name="haircolorper" >
-          <option value="{{ Auth::user()->haircolorper }}" selected disabled hidden>{{ Auth::user()->haircolorper }}</option>
 
           <option value="Black">Black</option>
           <option value="Brown">Brown</option>
@@ -159,7 +156,6 @@
       <td>Eye color :</td>
       <td>
         <select name="eyecolorper" >
-          <option value="{{ Auth::user()->eyecolorper }}" selected disabled hidden>{{ Auth::user()->eyecolorper }}</option>
 
           <option value="Amber">Amber</option>
           <option value="Blue">Blue</option>
@@ -179,7 +175,6 @@
       <td>Skin color :</td>
       <td>
         <select name="skincolorper" >
-          <option value="{{ Auth::user()->skincolorper }}" selected disabled hidden>{{ Auth::user()->skincolorper }}</option>
           <option value="Black">Black</option>
           <option value="Yellow">Yellow</option>
           <option value="White">White</option>
@@ -192,7 +187,6 @@
       <td>Hobbies:</td>
       <td>
         <select name="hobbiesper" >
-          <option value="{{ Auth::user()->hobbiesper }}" selected disabled hidden>{{ Auth::user()->hobbiesper }}</option>
           <option value="Traditional Sports">Traditional Sports</option>
           <option value="Outdoor Adventures">Outdoor Adventures</option>
           <option value="Watch TV Series/Movies">Watch TV Series/Movies</option>
@@ -205,7 +199,6 @@
       <td>Relationship prefer:</td>
       <td>
         <select name="relationshipper" >
-          <option value="{{ Auth::user()->relationshipper }}" selected disabled hidden>{{ Auth::user()->relationshipper }}</option>
 
 
           <option value="Short-term">Short-term</option>
@@ -220,7 +213,6 @@
       <td>
         <select name="occupationper" >
 
-            <option value="{{ Auth::user()->occupationper }}" selected disabled hidden>{{ Auth::user()->occupationper }}</option>
 
             <option value="Student">Student</option>
             <option value="Engineer">Engineer</option>
@@ -238,9 +230,26 @@
       </td>
     </tr>
     <tr>
-      <td><a href="{{ url('/settings') }}"><button type="submit">Update<a></td
+      <td><a href="{{ url('/settings') }}"><button type="submit">Update<a></td>
     </tr>
+  </form>
   </table>
 
-{!! Form::close() !!}
+
+
+<script>
+document.forms['editForm'].elements['ageper1'].value='{{ Auth::user()->ageper1 }}';
+document.forms['editForm'].elements['ageper2'].value='{{ Auth::user()->ageper2 }}';
+document.forms['editForm'].elements['genderper'].value='{{ Auth::user()->genderper }}';
+document.forms['editForm'].elements['locationper'].value='{{ Auth::user()->locationper }}';
+document.forms['editForm'].elements['ethnicper'].value='{{ Auth::user()->ethnicper }}';
+document.forms['editForm'].elements['haircolorper'].value='{{ Auth::user()->haircolorper }}';
+document.forms['editForm'].elements['eyecolorper'].value='{{ Auth::user()->eyecolorper }}';
+document.forms['editForm'].elements['skincolorper'].value='{{ Auth::user()->skincolorper }}';
+document.forms['editForm'].elements['hobbiesper'].value='{{ Auth::user()->hobbiesper }}';
+document.forms['editForm'].elements['relationshipper'].value='{{ Auth::user()->relationshipper }}';
+document.forms['editForm'].elements['occupationper'].value='{{ Auth::user()->occupationper }}';
+
+
+</script>
 @endsection
