@@ -325,7 +325,7 @@ body {
                 <div class="stackedcards-container">
                   <div class="card">
                     <div class="card-content">
-                      <div class="card-image"><img src="/storage/Profile_Picture/1570045569.jpg"/></div>
+                    <div class="card-image"><img src="https://image.ibb.co/fXPg7n/Beach_and_Chill.png" width="100%" height="100%"/></div>
                       <div class="card-titles">
                         <h1>Molly</h1>
                         <h3>Match suitability: 83%</h3>
@@ -335,7 +335,7 @@ body {
                   </div>
                   <div class="card">
                     <div class="card-content">
-                      <div class="card-image"><img src="https://image.ibb.co/fXPg7n/Beach_and_Chill.png" width="100%" height="100%"/></div>
+                    <div class="card-image"><img src="https://image.ibb.co/c9gTnn/Romantic_Gateways.png" width="100%" height="100%"/></div>
                       <div class="card-titles">
                         <h1>Lois</h1>
                         <h3>Match suitability: 80%</h3>
@@ -345,7 +345,7 @@ body {
                   </div>
                   <div class="card">
                     <div class="card-content">
-                      <div class="card-image"><img src="https://image.ibb.co/c9gTnn/Romantic_Gateways.png" width="100%" height="100%"/></div>
+                    <div class="card-image"><img src="https://image.ibb.co/jY88nn/city_breaks.png" width="100%" height="100%"/></div>
                       <div class="card-titles">
                         <h1>Amber</h1>
                         <h3>Match suitability: 75%</h3>
@@ -355,7 +355,7 @@ body {
                   </div>
                   <div class="card">
                     <div class="card-content">
-                      <div class="card-image"><img src="https://image.ibb.co/jY88nn/city_breaks.png" width="100%" height="100%"/></div>
+                    <div class="card-image"><img src="https://image.ibb.co/eBNZSn/Family_Vacation.png" width="100%" height="100%"/></div>
                       <div class="card-titles">
                         <h1>Emily</h1>
                         <h3>Match suitability: 64%</h3>
@@ -365,7 +365,7 @@ body {
                   </div>
                   <div class="card">
                     <div class="card-content">
-                      <div class="card-image"><img src="https://image.ibb.co/eBNZSn/Family_Vacation.png" width="100%" height="100%"/></div>
+                    <div class="card-image"><img src="https://image.ibb.co/epvM7n/Art_and_culture.png" width="100%" height="100%"/></div>
                       <div class="card-titles">
                         <h1>Wings</h1>
                         <h3>Match suitability: 56%</h3>
