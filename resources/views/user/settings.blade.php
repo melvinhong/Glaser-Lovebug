@@ -7,6 +7,7 @@ Settings | LoveBug
 @section('content')
 
 <div class="container">
+  <div class="row justify-content-center">
   <script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
   <div class="col-md-10">
     <div class="card">
@@ -20,7 +21,7 @@ Settings | LoveBug
 
             {{ csrf_field() }}
             {{ method_field('patch') }}
-            
+
           <div class="form-group row">
             <label for="age" class="col-md-4 col-form-label text-md-right" style="font-weight: bold;">Age Range</label>
             <div class="col-md-3">
@@ -249,6 +250,7 @@ Settings | LoveBug
         </div>
     </div>
   </div>
+</div>
 </div>
 
 <script>
