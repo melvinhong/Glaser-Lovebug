@@ -1,6 +1,6 @@
 # Group Member Information
 Student ID&nbsp;&nbsp;&nbsp;Name<br/>
-s3511881&nbsp;&nbsp;&nbsp;Melvin Hong<br/>
+s3511887&nbsp;&nbsp;&nbsp;Melvin Hong<br/>
 s3656181&nbsp;&nbsp;&nbsp;Ezgi Orturk<br/>
 s3678831&nbsp;&nbsp;&nbsp;Jun Wang Lew<br/>
 s3614753&nbsp;&nbsp;&nbsp;Lin Yang<br/>
@@ -79,14 +79,11 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-"# Glaser-Lovebug" 
+"# Glaser-Lovebug"
 
 ## start here
 1.</br>
 composer update</br>
-1.5</br>
--only if you already have a 'user' table on 'lovebug' at phpmyadmin-</br>
--delete it and go next step-</br>
 2.</br>
 php artisan migrate</br>
 3.</br>
