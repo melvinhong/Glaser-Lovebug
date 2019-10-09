@@ -109,7 +109,7 @@ LoveBug
                    echo "</div>";
 
                      $z++;
-             		  	 if ($z > 4) break;
+             		  	 if ($z > 50) break;
 
                    }
                    ?>
