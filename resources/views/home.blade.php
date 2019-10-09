@@ -126,7 +126,7 @@ LoveBug
             </div>
           </div>
 
-          <div class="final-state hidden"><h2>Query is over, sorry didn't give you the best match.</h2></div>
+          <div class="final-state hidden"><h2>Query is over, sorry for not providing you the best match.</h2></div>
         <div class="col-md-2"></div>
     </div>
 </div>
