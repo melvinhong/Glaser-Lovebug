@@ -13,7 +13,7 @@ LoveBug
 </div>
 
 <div class="modal fade login" style="padding-top: 120px;" id="loginModal">
-     <div class="modal-dialog login animated">
+     <div class="modal-dialog login animated" style="width: 100%;">
          <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -96,8 +96,9 @@ LoveBug
                           <div class="form-group row">
                            <input id="password_confirmation" class="form-control" type="password" placeholder="Confirm Password" name="password_confirmation" required autocomplete="new-password">
                            </div>
-                         <h3>All under infomation can change later</h3>
-                         <h4>Introduce myself</h4>
+
+                           <div class="form-group row"><h3>Introduce myself</h3></div>
+
                           <div class="form-group row">
                            <input id="age" class="form-control @error('age') is-invalid @enderror" type="text" placeholder="Age" name="age" value="{{ old('age') }}" required >
                            @error('age')
@@ -265,7 +266,7 @@ LoveBug
                            @enderror
                          </div>
 
-                         <h4>I am looking for<h4>
+                         <div class="form-group row"><h3>I am looking for</h3></div>
                            <div class="form-group row">
                             <input id="ageper1" class="form-control @error('ageper1') is-invalid @enderror" type="text" placeholder="Age From" name="ageper1" required >
                             @error('age')
@@ -275,7 +276,7 @@ LoveBug
                             @enderror
                           </div>
                           <div class="form-group row">
-                           <input id="ageper2" class="form-control @error('ageper2') is-invalid @enderror" type="text" placeholder="to" name="ageper2"  required >
+                           <input id="ageper2" class="form-control @error('ageper2') is-invalid @enderror" type="text" placeholder="To" name="ageper2"  required >
                            @error('age')
                                <span class="invalid-feedback" role="alert">
                                    <strong>{{ $message }}</strong>
@@ -285,7 +286,7 @@ LoveBug
 
                           <div class="form-group row">
                             <select id="genderper" class="form-control @error('genderper') is-invalid @enderror" type="text" name="genderper" value="{{ old('genderper') }}" required >
-                              <option selected hidden value="">Please select your gender</option>
+                              <option selected hidden value="">Preferred Gender</option>
                               <option value="Male">Male</option>
                               <option value="Female">Female</option>
                               <option value="Transgender">Transgender</option>
@@ -299,14 +300,14 @@ LoveBug
 
                           <div class="form-group row">
                             <select id="locationper" class="form-control @error('locationper') is-invalid @enderror" type="text" name="locationper" value="{{ old('locationper') }}" required>
-                              <option selected hidden value="">Please select your location</option>
+                              <option selected hidden value="">Preferred Location</option>
                               <option value="Victoria">Victoria</option>
                               <option value="New South Wales">New South Wales</option>
                               <option value="Queensland">Queensland</option>
                               <option value="South Australia">South Australia</option>
                               <option value="Western Australia">Western Australia</option>
                               <option value="Tasmania">Tasmania</option>
-                              <option value="Prefer Not to Say">Prefer Not to Say</option>
+                              <!-- <option value="Prefer Not to Say">Prefer Not to Say</option> -->
                             </select>
                             @error('location')
                                 <span class="invalid-feedback" role="alert">
@@ -317,7 +318,7 @@ LoveBug
 
                           <div class="form-group row">
                             <select id="ethnicper" class="form-control @error('ethnicper') is-invalid @enderror" type="text" name="ethnicper" value="{{ old('ethnicper') }}" required >
-                              <option selected hidden value="">Please select your ethnic</option>
+                              <option selected hidden value="">Preferred Ethnic</option>
                               <option value="British">British</option>
                               <option value="Irish">Irish</option>
                               <option value="Italian">Italian</option>
@@ -338,13 +339,13 @@ LoveBug
 
                           <div class="form-group row">
                             <select id="haircolorper" class="form-control @error('haircolorper') is-invalid @enderror" type="text" name="haircolorper" value="{{ old('haircolorper') }}" required >
-                              <option selected hidden value="">Please select your haircolor</option>
+                              <option selected hidden value="">Preferred Haircolor</option>
                               <option value="Black">Black</option>
                               <option value="Brown">Brown</option>
                               <option value="Blond">Blond</option>
                               <option value="Auburn">Auburn</option>
                               <option value="White">Gray/White</option>
-                              <option value="Prefer Not to Say">Prefer Not to Say</option>
+                              <!-- <option value="Prefer Not to Say">Prefer Not to Say</option> -->
                             </select>
                             @error('haircolor')
                                 <span class="invalid-feedback" role="alert">
@@ -355,16 +356,16 @@ LoveBug
 
                           <div class="form-group row">
                             <select id="eyecolorper" class="form-control @error('eyecolorper') is-invalid @enderror" type="text" name="eyecolorper" value="{{ old('eyecolorper') }}" required >
-                              <option selected hidden value="">Please select your eyecolor</option>
+                              <option selected hidden value="">Preferred Eyecolor</option>
                               <option value="Amber">Amber</option>
                               <option value="Blue">Blue</option>
-per                              <option value="Brown">Brown</option>
+                              <option value="Brown">Brown</option>
                               <option value="Gray">Gray</option>
                               <option value="Green">Green</option>
                               <option value="Hazel">Hazel</option>
                               <option value="Red">Red</option>
                               <option value="Violet">Violet</option>
-                              <option value="Prefer Not to Say">Prefer Not to Say</option>
+                              <!-- <option value="Prefer Not to Say">Prefer Not to Say</option> -->
                             </select>
                             @error('eyecolor')
                                 <span class="invalid-feedback" role="alert">
@@ -375,11 +376,11 @@ per                              <option value="Brown">Brown</option>
 
                           <div class="form-group row">
                             <select id="skincoloperrper" class="form-control @error('skincolorper') is-invalid @enderror" type="text" name="skincolorper" value="{{ old('skincolorper') }}" required >
-                              <option selected hidden value="">Please select your skincolor</option>
+                              <option selected hidden value="">Preferred Skincolor</option>
                               <option value="Black">Black</option>
                               <option value="Yellow">Yellow</option>
                               <option value="White">White</option>
-                              <option value="Prefer Not to Say">Prefer Not to Say</option>
+                              <!-- <option value="Prefer Not to Say">Prefer Not to Say</option> -->
                             </select>
                             @error('skincolor')
                                 <span class="invalid-feedback" role="alert">
@@ -390,7 +391,7 @@ per                              <option value="Brown">Brown</option>
 
                           <div class="form-group row">
                             <select id="hobbiesper" class="form-control @error('hobbiesper') is-invalid @enderror" type="text" name="hobbiesper" value="{{ old('hobbiesper') }}" required >
-                              <option selected hidden value="">Please select one hobby</option>
+                              <option selected hidden value="">Preferred Hobby</option>
                               <option value="Traditional Sports">Traditional Sports</option>
                               <option value="Outdoor Adventures">Outdoor Adventures</option>
                               <option value="Watch TV Series/Movies">Watch TV Series/Movies</option>
@@ -399,14 +400,14 @@ per                              <option value="Brown">Brown</option>
                             </select>
                             @error('hobbies')
                                 <span class="invalid-feedback" role="alert">
-per                                    <strong>{{ $message }}</strong>
+                                   <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
                           </div>
 
                           <div class="form-group row">
                             <select id="relationshipper" class="form-control @error('relationshipper') is-invalid @enderror" type="text" name="relationshipper" value="{{ old('relationshipper') }}" required >
-                              <option selected hidden value="">Type of relationship</option>
+                              <option selected hidden value="">Preferred type of relationship</option>
                               <option value="Short-term">Short-term</option>
                               <option value="Long-term">Long-term</option>
                               <option value="One Night Stand">One Night Stand</option>
@@ -421,7 +422,7 @@ per                                    <strong>{{ $message }}</strong>
 
                           <div class="form-group row">
                             <select id="occupationper" class="form-control @error('occupationper') is-invalid @enderror" type="text" name="occupationper" value="{{ old('occupationper') }}" required >
-                              <option selected hidden value="">Occupation</option>
+                              <option selected hidden value="">Preferred Occupation</option>
                               <option value="Student">Student</option>
                               <option value="Engineer">Engineer</option>
                               <option value="Worker">Worker</option>
@@ -431,7 +432,7 @@ per                                    <strong>{{ $message }}</strong>
                               <option value="Auditor">Auditor</option>
                               <option value="Artist">Artist</option>
                               <option value="Doctor">Doctor</option>
-                              <option value="Others/prefer Not to Say">Others/Prefer Not to Say</option>
+                              <!-- <option value="Others/prefer Not to Say">Others/Prefer Not to Say</option> -->
                             </select>
                             @error('occupation')
                                 <span class="invalid-feedback" role="alert">
