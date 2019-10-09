@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'LoveBug') }}</title>
+    <title>@yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -82,6 +82,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                  <img src="/storage/Profile_Picture/{{ Auth::user()->profile_image }}" style="width: 32px; height: 32px; border-radius: 50%; margin-right: 10px;">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -101,6 +102,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
+                                        <i class="fa fa-btn fa-sign-out"></i>
                                         {{ __('Logout') }}
                                     </a>
 

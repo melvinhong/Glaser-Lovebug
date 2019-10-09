@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		countElements();
 		currentElement();
+    changeBackground();
 		listElNodesWidth = stackedCardsObj.offsetWidth;
 		currentElementObj = listElNodesObj[0];
 		updateUi();
@@ -124,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			if(!(currentPosition >= maxElements)){
 				//roll back the opacity of second element
 				if((currentPosition + 1) < maxElements){
-					listElNodesObj[currentPosition + 1].style.opacity = '.8';
+					listElNodesObj[currentPosition + 1].style.opacity = '.5';
 				}
 			}
 		};
@@ -142,13 +143,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		  currentElementObj = listElNodesObj[currentPosition];
 		};
 
+		//Change background for each swipe.
+		function changeBackground() {
+      document.body.classList.add("background-" + currentPosition + "");
+		};
+
+		//Change states
+		function changeStages() {
+      if(currentPosition == maxElements){
+          //Event listener created to know when transition ends and changes states
+          listElNodesObj[maxElements - 1].addEventListener('transitionend', function(){
+            document.body.classList.add("background-7");
+            document.querySelector('.stage').classList.add('hidden');
+            document.querySelector('.final-state').classList.remove('hidden');
+            document.querySelector('.final-state').classList.add('active');
+            listElNodesObj[maxElements - 1].removeEventListener('transitionend', null, false);
+        });
+      }
+		};
+
 		//Functions to swipe left elements on logic external action.
 		function onActionLeft() {
 			if(!(currentPosition >= maxElements)){
 				if(useOverlays) {
 					leftObj.classList.remove('no-transition');
 					topObj.classList.remove('no-transition');
-					leftObj.style.zIndex = '8';
+					leftObj.style.zIndex = '5';
 					transformUi(0, 0, 1, leftObj);
 
 				}
@@ -166,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				if(useOverlays) {
 					rightObj.classList.remove('no-transition');
 					topObj.classList.remove('no-transition');
-					rightObj.style.zIndex = '8';
+					rightObj.style.zIndex = '5';
 					transformUi(0, 0, 1, rightObj);
 				}
 
@@ -184,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					leftObj.classList.remove('no-transition');
 					rightObj.classList.remove('no-transition');
 					topObj.classList.remove('no-transition');
-					topObj.style.zIndex = '8';
+					topObj.style.zIndex = '5';
 					transformUi(0, 0, 1, topObj);
 				}
 
@@ -207,6 +227,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			currentPosition = currentPosition + 1;
 			updateUi();
 			currentElement();
+      changeBackground();
+      changeStages();
 			setActiveHidden();
 		};
 
@@ -223,6 +245,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			currentPosition = currentPosition + 1;
 			updateUi();
 			currentElement();
+      changeBackground();
+      changeStages();
 			setActiveHidden();
 		};
 
@@ -240,6 +264,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			currentPosition = currentPosition + 1;
 			updateUi();
 			currentElement();
+      changeBackground();
+      changeStages();
 			setActiveHidden();
 		};
 
@@ -609,8 +635,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					}
 
 					if(useOverlays){
-						leftObj.style.zIndex = 8;
-						rightObj.style.zIndex = 8;
+						leftObj.style.zIndex = 5;
+						rightObj.style.zIndex = 5;
 						topObj.style.zIndex = 7;
 					}
 
