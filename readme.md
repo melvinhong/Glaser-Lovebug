@@ -87,11 +87,14 @@ The Laravel framework is open-source software licensed under the [MIT license](h
 composer update
 ```
 </br>
+
 2.</br>
+
 ```bash
 php artisan migrate
 ```
 </br>
+
 3.</br>
 ```bash
 composer require pusher/pusher-php-server "~3.0"
