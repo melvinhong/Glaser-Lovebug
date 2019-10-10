@@ -88,8 +88,18 @@ composer update
 ```
 </br>
 2.</br>
-php artisan migrate</br>
+```
+php artisan migrate
+```
+</br>
 3.</br>
-composer require pusher/pusher-php-server "~3.0"</br>
-4.</br>
-php artisan serve</br>
+```
+composer require pusher/pusher-php-server "~3.0"
+```
+</br>
+4.
+</br>
+```
+php artisan serve
+```
+</br>
