@@ -21,7 +21,7 @@ $factory->define(User::class, function (Faker $faker) {
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'email_verified_at' => now(),
-        'profile_image' => 'https://via.placeholder.com/150x150',
+        'profile_image' => '1 (2).jpg',
         'password' => bcrypt('123'), // password
         'remember_token' => Str::random(10),
     ];
