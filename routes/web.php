@@ -30,7 +30,10 @@ Route::get('/admin', function () {
 
 Route::namespace('Admin')->name('admin.')->middleware(['auth', 'auth.admin'])->group(function() {
   Route::resource('/admin', 'UserController', ['except' => ['show', 'create', 'store']]);
+  Route::get('/impersonate/user/{id}', 'ImpersonateController@index')->name('impersonate');
 });
+
+Route::get('/admin/impersonate/destroy', 'Admin\ImpersonateController@destroy')->name('admin.impersonate.destroy');
 
 // Routes for managing profile.
 Route::get('/profile', 'ProfileController@index')->name('profile');
