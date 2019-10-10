@@ -100,6 +100,7 @@ php artisan migrate
 composer require pusher/pusher-php-server "~3.0"
 ```
 </br>
+
 4.
 </br>
 ```bash
