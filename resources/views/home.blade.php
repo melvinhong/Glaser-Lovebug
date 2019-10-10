@@ -47,7 +47,7 @@ LoveBug
    text-align: center;
  }
 
- 
+
  .title {
      width: 100%;
      padding-bottom: 30px;
@@ -314,7 +314,6 @@ body {
 /*----- Stacked Cards component css END -----*/
             </style>
           <h1>You can change your matchmaking perfomance on setting page</h1>
-          <h1 style="text-align: center; font-size: 25px;">You can change your matchmaking perfomance on setting page.</h1>
           <div class="stage">
               <div id="stacked-cards-block" class="stackedcards stackedcards--animatable init">
                 <div class="stackedcards-container">
@@ -394,6 +393,7 @@ body {
 
                			 	$j=($a+$l+$g+$h+$et+$ec+$s+$r+$hb+$oc)/2.6;
 
+
                			 	$matchmark[$row->name]=$j;
                 		}
                     arsort($matchmark);
@@ -413,19 +413,18 @@ body {
                      echo "</div>";
                      echo "</div>";
 
-                   echo "<div class='card-image'><img src='/storage/Profile_Picture/$pro->profile_image'></div>";
-                   echo "<div class='card-titles'>";
-                   echo "<h1 style='color: black; font-weight: 600;'>$matchname</h1>";
-                   echo "<h3 style='color: black;'> Match suitability: $markscore%</h3>";
-                   echo "</div>";
-                   echo "</div>";
-                   echo "</div>";
 
                      $z++;
-             		  	 if ($z > 50) break;
+             		  	 if ($z > 4) break;
+
 
                    }
                    ?>
+
+
+
+
+
 
                 </div>
                 <div class="stackedcards--animatable stackedcards-overlay top"style="visibility: hidden"><img src="https://image.ibb.co/m1ykYS/rank_army_star_2_3x.png"  width="18" height="16"/></div>
@@ -439,7 +438,7 @@ body {
             </div>
           </div>
 
-          <div class="final-state hidden"><h2>Query is over, sorry for not providing you the best match.</h2></div>
+          <div class="final-state hidden"><h2>Query is over, sorry did't give you the best match <br/> .</h2></div>
         <div class="col-md-2"></div>
     </div>
 </div>
