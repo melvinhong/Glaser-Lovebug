@@ -82,11 +82,24 @@ The Laravel framework is open-source software licensed under the [MIT license](h
 "# Glaser-Lovebug"
 
 ## start here
-1.</br>
-composer update</br>
-2.</br>
-php artisan migrate</br>
-3.</br>
-composer require pusher/pusher-php-server "~3.0"</br>
-4.</br>
-php artisan serve</br>
+1.Update laravel files like vendor or sth</br>
+```bash
+composer update
+```
+</br>
+
+2.Insert database into phpmyadmin</br>
+
+```bash
+php artisan migrate
+```
+</br>
+
+
+3.Make website work</br>
+```bash
+php artisan serve
+```
+</br>
+
+

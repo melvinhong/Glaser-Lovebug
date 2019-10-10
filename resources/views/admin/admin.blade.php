@@ -27,6 +27,9 @@ Admin | LoveBug
                 <td>{{ $user->name }}</td>
                 <td>{{ $user->email }}</td>
                 <td>
+                  <a href="{{ route('admin.impersonate', $user->id) }}" class="float-left">
+                    <button type="button" class="btn btn-success btn-sm">Impersonate User</button>
+                  </a>
                   <form action="{{ route('admin.admin.destroy', $user->id) }}" method="POST">
                     @csrf
                     {{ method_field('DELETE')}}
