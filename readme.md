@@ -83,7 +83,10 @@ The Laravel framework is open-source software licensed under the [MIT license](h
 
 ## start here
 1.</br>
-composer update</br>
+```
+composer update
+```
+</br>
 2.</br>
 php artisan migrate</br>
 3.</br>
