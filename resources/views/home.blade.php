@@ -47,13 +47,7 @@ LoveBug
    text-align: center;
  }
 
- h3 {
-   font-size: 18px;
-   font-weight: 300;
-   color: #BFBFBE;
-   margin-top: 10px;
- }
-
+ 
  .title {
      width: 100%;
      padding-bottom: 30px;
@@ -414,7 +408,7 @@ body {
                     echo "<div class='card-image'><img src='/storage/Profile_Picture/$pro->profile_image'></div>";
                       echo "<div class='card-titles'>";
                       echo"<h1>$matchname</h1>";
-                      echo" <h3> Match suitability: $markscore%</h3>";
+                      echo" <h3 style='font-color: white;'>  $pro->age years old</h3>";
                     echo "</div>";
                      echo "</div>";
                      echo "</div>";
