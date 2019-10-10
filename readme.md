@@ -101,9 +101,11 @@ composer require pusher/pusher-php-server "~3.0"
 ```
 </br>
 
-4.
-</br>
+
+4.</br>
 ```bash
 php artisan serve
 ```
 </br>
+
+
