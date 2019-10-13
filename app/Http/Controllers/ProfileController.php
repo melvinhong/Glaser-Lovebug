@@ -26,7 +26,9 @@ class ProfileController extends Controller
       {
         $profile_image = $request->file('profile_image');
         $filename = time() . '.' . $profile_image->getClientOriginalExtension();
-        Image::make($profile_image)->resize(300,300)->save( public_path ('/storage/Profile_Picture/' . $filename));
+        Image::make($profile_image)->resize(300,300)->save( public_path ('/storage/storage/Profile_Picture/' . $filename));
+        Image::make($profile_image)->resize(300,300)->save( public_path ('/Profile_Picture/' . $filename));
+
       } else {
         return redirect('/profile')->with('success', 'Profile has been updated.');;
       }
@@ -34,6 +36,8 @@ class ProfileController extends Controller
       $user = Auth::user();
       $user->profile_image = $filename;
       $user->profile_image = request()->file('profile_image')->store('Profile_Picture');
+      $user->profile_image = request()->file('profile_image')->store('/storage/Profile_Picture');
+
       $user->name = request()->input('name');
       $user->age = request()->input('age');
       $user->gender = request()->input('gender');
