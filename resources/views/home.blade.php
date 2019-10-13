@@ -61,6 +61,8 @@ LoveBug
    position: relative;
    color: #fff;
    padding: 5px;
+   width: 100%;
+   height: 100%;
  }
 
  .card-image {
@@ -405,7 +407,7 @@ body {
 
                    echo "<div class='card'>";
                    echo "<div class='card-content'>";
-                    echo "<div class='card-image'><img src='/Profile_Picture/$pro->profile_image'></div>";
+                    echo "<div class='card-image'><img src='$pro->profile_image'></div>";
                       echo "<div class='card-titles'>";
                       echo"<h1>$matchname</h1>";
                       echo" <h3 style='font-color: white;'>  $pro->age years old</h3>";
