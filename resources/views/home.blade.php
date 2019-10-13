@@ -402,6 +402,9 @@ body {
                    }
                    $z=0;
                     foreach ($matchmark as $matchname => $markscore){
+                      if (auth()->user()->name ==$matchname) {
+                        continue;
+                      }
 
              		   $pro = DB::table('users')->where('name', $matchname)->first();
 
