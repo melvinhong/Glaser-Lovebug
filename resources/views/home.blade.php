@@ -410,7 +410,7 @@ body {
 
                    echo "<div class='card'>";
                    echo "<div class='card-content'>";
-                    echo "<div class='card-image'><img src='$pro->profile_image'></div>";
+                   echo "<div class='card-image'><img src='https://icon-library.net/images/default-user-icon/default-user-icon-14.jpg'></div>";
                       echo "<div class='card-titles'>";
                       echo"<h1>$matchname</h1>";
                       echo" <h3 style='font-color: white;'>  $pro->age years old</h3>";

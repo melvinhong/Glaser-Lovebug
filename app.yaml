@@ -1,0 +1,28 @@
+runtime: php
+env: flex
+
+runtime_config:
+  document_root: public
+
+skip_files:
+  .env
+
+env_variables:
+  ## Put production environment variables here.
+  APP_LOG: error log
+  APP_DEBUG: true
+  APP_KEY: base64:H8moKgjAc5KvzGPIjc1DDU3ecuvxr3+sUn9vTyzi7ZQ=
+  STORAGE_DIR: /tmp
+  CACHE_DRIVER: database
+  DB_CONNECTION: mysql
+  DB_HOST: localhost
+  DB_PORT: 3306
+  DB_DATABASE: laravel
+  DB_USERNAME: laravel
+  DB_PASSWORD: laravel
+  DB_SOCKET: "/cloudsql/team63a2:australia-southeast1:team63"
+
+beta_settings:
+   # for Cloud SQL, set this value to the Cloud SQL connection name,
+   # e.g. "project:region:cloudsql-instance"
+   cloud_sql_instances: "team63a2:australia-southeast1:team63"
