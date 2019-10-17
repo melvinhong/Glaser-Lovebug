@@ -6,6 +6,9 @@ s3678831&nbsp;&nbsp;&nbsp;Jun Wang Lew<br/>
 s3614753&nbsp;&nbsp;&nbsp;Lin Yang<br/>
 s3498087&nbsp;&nbsp;&nbsp;De Kang Zeng</br>
 
+#Github Link
+https://github.com/s3511887/Glaser-Lovebug
+
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
@@ -81,22 +84,33 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 "# Glaser-Lovebug"
 
-## start here
-1.Update laravel files like vendor or sth</br>
+## Installation Guide
+1. Update laravel files like vendor or sth</br>
 ```bash
 composer update
 ```
 </br>
 
-2.Insert database into phpmyadmin</br>
+2. To allow image upload save into file.</br>
+```bash
+composer require intervention/image
+```
+</br>
 
+3. Open an image folder to save all the images upload into file.</br>
+```bash
+php artisan storage:link
+```
+</br>
+
+4. Insert database.</br>
 ```bash
 php artisan migrate
 ```
 </br>
 
 
-3.Make website work</br>
+5. Run the website.</br>
 ```bash
 php artisan serve
 ```
