@@ -122,6 +122,12 @@ Normal User:</br>
 Act: user@user.com</br>
 PW: user</br>
 
+5. Create profile images path.</br>
+1)Create Profile_Picture folder under Glaser-Lovebug/public</br>
+2)Create Profile_Picture and storage folder under Glaser-Lovebug/public/storage</br>
+3)Create Profile_Picture folder under Glaser-Lovebug/public/storage/storage</br>
+</br>
+
 
 5. Run the website.</br>
 ```bash
