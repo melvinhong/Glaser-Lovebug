@@ -36,7 +36,7 @@ class ProfileController extends Controller
       $user = Auth::user();
       $user->profile_image = $filename;
       $user->profile_image = request()->file('profile_image')->store('Profile_Picture');
-      $user->profile_image = request()->file('profile_image')->store('/storage/Profile_Picture');
+      $user->profile_image = request()->file('profile_image')->store('storage/Profile_Picture');
 
       $user->name = request()->input('name');
       $user->age = request()->input('age');
