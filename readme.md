@@ -109,6 +109,19 @@ php artisan migrate
 ```
 </br>
 
+4.5 Preset accounts on admin and user.</br>
+```bash
+php artisan db:seed
+```
+</br>
+Admin user:</br>
+Act: admin@admin.com</br>
+PW: admin</br>
+
+Normal User:</br>
+Act: user@user.com</br>
+PW: user</br>
+
 
 5. Run the website.</br>
 ```bash
