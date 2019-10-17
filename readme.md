@@ -129,7 +129,7 @@ PW: user</br>
 </br>
 
 
-5. Run the website.</br>
+6. Run the website.</br>
 ```bash
 php artisan serve
 ```
