@@ -9,7 +9,7 @@ LoveBug
     <div class="row justify-content-left">
       <div class="col-md-2 "></div>
         <div class="col-md-8">
-          <h1>You can change your matchmaking perfomance on setting page</h1>
+          <h1 style="font-size: 25px;">You can change your matchmaking perfomance on setting page.</h1>
           <div class="stage">
               <div id="stacked-cards-block" class="stackedcards stackedcards--animatable init">
                 <div class="stackedcards-container">
@@ -113,7 +113,7 @@ LoveBug
                    echo "</div>";
 
                      $z++;
-             		  	 if ($z > 4) break;
+             		  	 if ($z > 20) break;
                    }
                    ?>
 
@@ -129,7 +129,7 @@ LoveBug
             </div>
           </div>
 
-          <div class="final-state hidden"><h2>Query is over, sorry for not providing you the best match <br/> .</h2></div>
+          <div class="final-state hidden"><h2>Query is over, sorry for not providing you the best match.</h2></div>
         <div class="col-md-2"></div>
     </div>
 </div>
