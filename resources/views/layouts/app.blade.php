@@ -88,10 +88,14 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
+                                  @if (Auth::check())
+                                  @if (Auth::user()->hasAnyRole("admin"))
                                   <a class="dropdown-item" href="{{ route('admin.impersonate.destroy') }}">
                                       <i class="fa fa-btn fa-times-rectangle"></i>
                                       {{ __('Stop Impersonating') }}
                                   </a>
+                                  @endif
+                                  @endif
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
