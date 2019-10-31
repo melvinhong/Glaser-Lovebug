@@ -30,7 +30,6 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="{{ url('/home') }}">Home</a>
   <a href="{{ url('/profile') }}">My Profile</a>
-  
   <a href="{{ url('/messenger') }}">Messenger</a>
   <a href="{{ url('/about') }}">About Us</a>
   <a></a><a></a><a></a><a></a>
@@ -121,6 +120,11 @@
           </div>
             @yield('content')
         </main>
+		
+		<footer class="footer-basic-centered" style="background-color: floralwhite;">
+		<p style="font-size: 20px; text-align: center; font-family: fantasy;">Contact Us</p>
+		<p style="text-align: center;"><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=s3614753@student.rmit.edu.au&su=&body=&tf=1">s3614753@student.rmit.edu.au</a></p>
+		</footer>
 
     <script>
       function openNav() {
