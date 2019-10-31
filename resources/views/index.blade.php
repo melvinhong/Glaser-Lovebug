@@ -319,15 +319,21 @@ LoveBug
                           <div class="form-group row">
                             <select id="ethnicper" class="form-control @error('ethnicper') is-invalid @enderror" type="text" name="ethnicper" value="{{ old('ethnicper') }}" required >
                               <option selected hidden value="">Preferred Ethnic</option>
-                              <option value="British">British</option>
+                              <option value="Aboriginal Australian">Aboriginal Australian</option>
+							  <option value="African">African</option>
+							  <option value="British">British</option>
+							  <option value="Chinese">Chinese</option>
+							  <option value="Dutch">Dutch</option>
+							  <option value="German">German</option>
+							  <option value="Greek">Greek</option>
+							  <option value="Hispanic">Hispanic</option>
+							  <option value="Indian">Indian</option>
                               <option value="Irish">Irish</option>
                               <option value="Italian">Italian</option>
-                              <option value="German">German</option>
-                              <option value="Chinese">Chinese</option>
-                              <option value="Aboriginal Australian">Aboriginal Australian</option>
-                              <option value="Indian">Indian</option>
-                              <option value="Greek">Greek</option>
-                              <option value="Dutch">Dutch</option>
+							  <option value="Japanese">Japanese</option>
+							  <option value="Jews">Jews</option>
+							  <option value="Korean">Korean</option>
+                              <option value="Latino">Latino</option>
                               <option value="Other">Other</option>
                             </select>
                             @error('ethnic')
