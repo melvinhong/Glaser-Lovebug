@@ -452,7 +452,9 @@ LoveBug
                <div class="modal-footer">
                    <div class="forgot login-footer">
                        <span><b>Don't have an account?</b>
-                            <a href="javascript: showRegisterForm();"><b>Sign Up</b></a>
+                            <a href="javascript: showRegisterForm();"><b><br>Sign Up</b></a>
+							<b><br><br>Forgot Password? Contact the admin.</b>
+							<b><br><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=s3614753@student.rmit.edu.au&su=&body=&tf=1">s3614753@student.rmit.edu.au</b></a>
                         </span>
                    </div>
                    <div class="forgot register-footer">
