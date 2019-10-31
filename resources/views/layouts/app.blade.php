@@ -30,7 +30,7 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="{{ url('/home') }}">Home</a>
   <a href="{{ url('/profile') }}">My Profile</a>
-  <a href="{{ url('/settings') }}">Settings</a>
+  
   <a href="{{ url('/messenger') }}">Messenger</a>
   <a href="{{ url('/about') }}">About Us</a>
   <a></a><a></a><a></a><a></a>
